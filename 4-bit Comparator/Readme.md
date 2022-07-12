@@ -46,7 +46,7 @@ Let me explain these three modelling with examples  <br />
 When we design a Verilog code entirely using Primitive Logic Gates, it is called “Gate Level Modelling“. This is Lowest level abstraction, and it is hard to understand the intent of the code by the human, but is easy and guaranteed for machine compiling and logical synthesis.  <br />
 
 <br />
-<sup>
+<sub>
  module Comparator(  input [3:0] a,  <br />
                      input [3:0] b,   <br />
                      output out      );  <br />
@@ -60,7 +60,7 @@ When we design a Verilog code entirely using Primitive Logic Gates, it is called
  and and0( out, n0, n1, n2, n3);<br />
  <br />
 endmodule<br />
-</sup><br />
+</sub><br />
 <br />
 It uses library modules for gates inserted into the Comparator module. The act of inserting the library modules is known as instantiation.
 Each instance of the gate model is wired to different signals.
