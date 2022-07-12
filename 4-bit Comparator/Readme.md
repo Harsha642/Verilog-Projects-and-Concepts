@@ -6,7 +6,7 @@ In Verilog, a design consists of modules.
 Verilog is a acronym for Verifying Logic
 
 **History of Verilog** : 
-Verilog is a modeling language created by Gateway Automation in 1984. Gateway is acquired by Cadence in 1990. With the increasing success of VHDL at the time, Cadence decided to make the language available for open standardization. Cadence transferred Verilog into the public domain under the Open Verilog International Organization now known as Accellera. Verilog was later submitted to IEEE and became the IEEE Standard 1364 in 1995, commonly referred to as Verilog-95. // <br />
+Verilog is a modeling language created by Gateway Automation in 1984. Gateway is acquired by Cadence in 1990. With the increasing success of VHDL at the time, Cadence decided to make the language available for open standardization. Cadence transferred Verilog into the public domain under the Open Verilog International Organization now known as Accellera. Verilog was later submitted to IEEE and became the IEEE Standard 1364 in 1995, commonly referred to as Verilog-95.  <br />
 Extensions to Verilog-95 were submitted back to IEEE to cover the deficiencies that users had found in the original Verilog standard. These extensions became IEEE Standard 1364-2001 known as Verilog-2001, another update occurred in 2005. In many cases, the FPGA vendors are supporting Verilog-2001 may not support 2005 as of yet, and so it's important to know the distinction between these because it may affect how the synthesizer treat your Verilog code. As of 2009, the SystemVerilog and Verilog language standards were merged into SystemVerilog 2009 which is now IEEE Standard 1800-2009. Current version is IEEE Standard 1800-2017. While some FPGA vendors tools support synthesis from SystemVerilog, most of them, in fact all of them will support Verilog, but only some will support SystemVerilog at this point, and the version of SystemVerilog they support is probably a couple of revisions back. It might be still 2009, that's something that you have to check with your FPGA vendor tools as you're working with Verilog as an HDL input.
 
 
@@ -57,7 +57,7 @@ When we design a Verilog code entirely using Primitive Logic Gates, it is called
  
 endmodule
 </sup>
-/
+<br />
 It uses library modules for gates inserted into the Comparator module. The act of inserting the library modules is known as instantiation.
 Each instance of the gate model is wired to different signals.
 The first XNOR gate labeled xnor0 has a[0] and b[0] as Inputs with n0 as the Output 
