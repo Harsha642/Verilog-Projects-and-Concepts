@@ -13,24 +13,24 @@ Extensions to Verilog-95 were submitted back to IEEE to cover the deficiencies t
 
 Verilog language has the capability of designing a module in several coding styles. Depending on the needs of a design, internals of each module can be defined at four level of abstractions. Irrespective of the internal abstraction level, the module would behave exactly in the similar way to the external environment. Following are the four different levels of abstraction which can be described by four different coding styles of Verilog language:  <br />
 
-Behavioral or Algorithmic level <br />
-Dataflow level  <br />
-Gate level or Structural level  <br />
-Switch level  <br />
+1. Behavioral or Algorithmic level <br />
+2. Dataflow level  <br />
+3. Gate level or Structural level  <br />
+4. Switch level  <br />
   <br />
 Let’s us discuss the first three modelling styles in detailed and also using 4-bit Comparator as an example. <br />
 Before diving into let's look some analogy <br />
 <br />
 **Analogy :** <br />
 When we think of any digital circuit, either it is a combinational or a sequential circuit, we have three aspects in our mind. They are:- <br />
-Circuit diagram or schematic,  <br />
-Logical Expression, and   <br />
-Truth table.  <br />
+1) Circuit diagram or schematic,  <br />
+2) Logical Expression, and   <br />
+3) Truth table.  <br />
  <br />
 So, when comes to Verilog HDL or any HDL, there are three aspects of Modelling:    <br />
-Structural or Gate-level modelling,  <br />
-Dataflow modelling,   <br />
-Behavioral modelling.  <br />
+1) Structural or Gate-level modelling,  <br />
+2) Dataflow modelling,   <br />
+3) Behavioral modelling.  <br />
 These three modelling aspects in Verilog HDL relate to those three aspects of a digital circuit respectively. <br />
 Let me explain these three modelling with examples  <br />
 <br />
