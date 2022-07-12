@@ -102,7 +102,7 @@ The behavioural modelling completely depends on the truth table or behaviour of 
  module Comparator2( input [3:0] A, <br />
                      input [3:0] B, <br />
                      output reg Y     );   <br />
-                     
+                     <br />
    integer N;<br />
    <br />
    always@(A or B)                                                <br />
