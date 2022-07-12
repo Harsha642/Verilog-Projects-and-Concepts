@@ -57,7 +57,7 @@ When we design a Verilog code entirely using Primitive Logic Gates, it is called
  
 endmodule
 </sup>
-
+/
 It uses library modules for gates inserted into the Comparator module. The act of inserting the library modules is known as instantiation.
 Each instance of the gate model is wired to different signals.
 The first XNOR gate labeled xnor0 has a[0] and b[0] as Inputs with n0 as the Output 
