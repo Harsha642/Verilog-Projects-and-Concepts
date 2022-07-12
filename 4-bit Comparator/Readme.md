@@ -32,6 +32,7 @@ So, when comes to Verilog HDL or any HDL, there are three aspects of Modelling: 
 1. Structural or Gate-level modelling,  <br />
 2. Dataflow modelling,   <br />
 3. Behavioral modelling.  <br />
+<br />
 These three modelling aspects in Verilog HDL relate to those three aspects of a digital circuit respectively. <br />
 Let me explain these three modelling with examples 
 <br />
