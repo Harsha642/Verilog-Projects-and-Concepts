@@ -10,6 +10,7 @@ Verilog is a modeling language created by Gateway Automation in 1984. Gateway is
 
 Extensions to Verilog-95 were submitted back to IEEE to cover the deficiencies that users had found in the original Verilog standard. These extensions became IEEE Standard 1364-2001 known as Verilog-2001, another update occurred in 2005. In many cases, the FPGA vendors are supporting Verilog-2001 may not support 2005 as of yet, and so it's important to know the distinction between these because it may affect how the synthesizer treat your Verilog code. As of 2009, the SystemVerilog and Verilog language standards were merged into SystemVerilog 2009 which is now IEEE Standard 1800-2009. Current version is IEEE Standard 1800-2017. While some FPGA vendors tools support synthesis from SystemVerilog, most of them, in fact all of them will support Verilog, but only some will support SystemVerilog at this point, and the version of SystemVerilog they support is probably a couple of revisions back. It might be still 2009, that's something that you have to check with your FPGA vendor tools as you're working with Verilog as an HDL input.  <br />
 
+**Flexibility :** <br />
 
 Verilog language has the capability of designing a module in several coding styles. Depending on the needs of a design, internals of each module can be defined at four level of abstractions. Irrespective of the internal abstraction level, the module would behave exactly in the similar way to the external environment. Following are the four different levels of abstraction which can be described by four different coding styles of Verilog language:  <br />
 
@@ -20,8 +21,8 @@ Verilog language has the capability of designing a module in several coding styl
   <br />
 Let’s us discuss the first three modelling styles in detailed and also using 4-bit Comparator as an example. <br />
 Before diving into let's look some analogy <br />
-<br />
-_Analogy :_  
+
+**Analogy :**
 <br />
 When we think of any digital circuit, either it is a combinational or a sequential circuit, we have three aspects in our mind. They are:- <br />
 1) Circuit diagram or schematic,  <br />
