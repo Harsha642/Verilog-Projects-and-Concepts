@@ -23,6 +23,7 @@ Before diving into let's look some analogy
 
 **Analogy :** <br />
 When we think of any digital circuit, either it is a combinational or a sequential circuit, we have three aspects in our mind. They are:- <br />
+
 1. Circuit diagram or schematic,  <br />
 2. Logical Expression, and   <br />
 3. Truth table.  <br />
