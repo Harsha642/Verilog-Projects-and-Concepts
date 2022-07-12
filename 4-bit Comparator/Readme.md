@@ -122,6 +122,8 @@ Although a bit less efficient than a data flow model, this type of modelling can
 <br />
 
 
-
+ **OUTPUT**
+    
+   <img src="BehaviouralSim.PNG">
 
 
