@@ -19,7 +19,7 @@ Verilog language has the capability of designing a module in several coding styl
 4. Switch level  
 <br />
 Let’s us discuss the first three modelling styles in detailed and also using 4-bit Comparator as an example. <br />
-Before diving into let's look some analogy <br />
+Before diving into let's look some analogy 
 **Analogy :** <br />
 When we think of any digital circuit, either it is a combinational or a sequential circuit, we have three aspects in our mind. They are:- <br />
 1) Circuit diagram or schematic,  <br />
