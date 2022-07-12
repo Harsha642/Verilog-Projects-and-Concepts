@@ -118,7 +118,7 @@ endmodule<br />
  <br />
 The synthesizer will again create exactly the same comparator circuit based on this description.  <br />
 Although a bit less efficient than a data flow model, this type of modelling can be extended easily to much more complex hardware. So this is the type of modelling we will tend to do the most once we become more experienced with Verilog, but the structural modelling and data flow modelling are still used in a lot of examples, So it good to know all three. <br />
-
+<br />
 
 
 
