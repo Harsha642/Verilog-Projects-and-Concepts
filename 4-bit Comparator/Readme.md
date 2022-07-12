@@ -1,35 +1,38 @@
 
-Verilog, standardized as IEEE 1364, is a hardware description language (HDL) used to model electronic systems. 
-It is most commonly used in the design and verification of digital circuits at the register-transfer level of abstraction. 
-In Verilog, a design consists of modules. 
-
-Verilog is a acronym for Verifying Logic
-
-**History of Verilog** : 
+Verilog, standardized as IEEE 1364, is a hardware description language (HDL) used to model electronic systems.  <br />
+It is most commonly used in the design and verification of digital circuits at the register-transfer level of abstraction.  <br />
+In Verilog, a design consists of modules. <br />
+<br />
+Verilog is a acronym for Verifying Logic  <br />
+<br /> 
+**History of Verilog** :  <br />
 Verilog is a modeling language created by Gateway Automation in 1984. Gateway is acquired by Cadence in 1990. With the increasing success of VHDL at the time, Cadence decided to make the language available for open standardization. Cadence transferred Verilog into the public domain under the Open Verilog International Organization now known as Accellera. Verilog was later submitted to IEEE and became the IEEE Standard 1364 in 1995, commonly referred to as Verilog-95.  <br />
-Extensions to Verilog-95 were submitted back to IEEE to cover the deficiencies that users had found in the original Verilog standard. These extensions became IEEE Standard 1364-2001 known as Verilog-2001, another update occurred in 2005. In many cases, the FPGA vendors are supporting Verilog-2001 may not support 2005 as of yet, and so it's important to know the distinction between these because it may affect how the synthesizer treat your Verilog code. As of 2009, the SystemVerilog and Verilog language standards were merged into SystemVerilog 2009 which is now IEEE Standard 1800-2009. Current version is IEEE Standard 1800-2017. While some FPGA vendors tools support synthesis from SystemVerilog, most of them, in fact all of them will support Verilog, but only some will support SystemVerilog at this point, and the version of SystemVerilog they support is probably a couple of revisions back. It might be still 2009, that's something that you have to check with your FPGA vendor tools as you're working with Verilog as an HDL input.
+
+Extensions to Verilog-95 were submitted back to IEEE to cover the deficiencies that users had found in the original Verilog standard. These extensions became IEEE Standard 1364-2001 known as Verilog-2001, another update occurred in 2005. In many cases, the FPGA vendors are supporting Verilog-2001 may not support 2005 as of yet, and so it's important to know the distinction between these because it may affect how the synthesizer treat your Verilog code. As of 2009, the SystemVerilog and Verilog language standards were merged into SystemVerilog 2009 which is now IEEE Standard 1800-2009. Current version is IEEE Standard 1800-2017. While some FPGA vendors tools support synthesis from SystemVerilog, most of them, in fact all of them will support Verilog, but only some will support SystemVerilog at this point, and the version of SystemVerilog they support is probably a couple of revisions back. It might be still 2009, that's something that you have to check with your FPGA vendor tools as you're working with Verilog as an HDL input.  <br />
+
+
+<br />
+<br />
+<br />
 
 
 
+Verilog language has the capability of designing a module in several coding styles. Depending on the needs of a design, internals of each module can be defined at four level of abstractions. Irrespective of the internal abstraction level, the module would behave exactly in the similar way to the external environment. Following are the four different levels of abstraction which can be described by four different coding styles of Verilog language:  <br />
 
+Behavioral or Algorithmic level <br />
+Dataflow level  <br />
+Gate level or Structural level  <br />
+Switch level  <br />
+  <br />
+Let’s us discuss the first three modelling styles in detailed and also using 4-bit Comparator as an example. <br />
+Before diving into let's look some analog <br />
+<br />
 
-
-Verilog language has the capability of designing a module in several coding styles. Depending on the needs of a design, internals of each module can be defined at four level of abstractions. Irrespective of the internal abstraction level, the module would behave exactly in the similar way to the external environment. Following are the four different levels of abstraction which can be described by four different coding styles of Verilog language:
-
-Behavioral or Algorithmic level
-Dataflow level
-Gate level or Structural level
-Switch level
-
-Let’s us discuss the first three modelling styles in detailed and also using 4-bit Comparator as an example.
-
-
-
-When we think of any digital circuit, either it is a combinational or a sequential circuit, we have three aspects in our mind. They are:-
-Circuit diagram or schematic, 
-Logical Expression, and 
-Truth table. 
-
+When we think of any digital circuit, either it is a combinational or a sequential circuit, we have three aspects in our mind. They are:- <br />
+Circuit diagram or schematic,  <br />
+Logical Expression, and   <br />
+Truth table.  <br />
+ <br />
 So, when comes to Verilog HDL or any HDL, there are three aspects of Modelling:
 Structural or Gate-level modelling, 
 Dataflow modelling, 
