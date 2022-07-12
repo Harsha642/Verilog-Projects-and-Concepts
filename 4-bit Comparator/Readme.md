@@ -38,7 +38,7 @@ These three modelling aspects in Verilog HDL relate to those three aspects of a 
 Let me explain these three modelling with examples 
 <br />
 
-**Functionality of 4-bit Comparator :**
+**Functionality of 4-bit Comparator :**<br />
 I will design a simple comparator which compares the corresponding bits in Input A abd Input B; If both inputs are same the output be high(1) else low(0)  
 A and B are 4 bit binary numbers 
 <br />
@@ -68,6 +68,7 @@ It uses library modules for gates inserted into the Comparator module. The act o
 Each instance of the gate model is wired to different signals.
 The first XNOR gate labeled xnor0 has a[0] and b[0] as Inputs with n0 as the Output. Each successive XNOR gate instance operates on successive bits of the input vector. The outputs of the XNOR gates are connected to the 4-input AND gate which provides the output. This code will synthesize exactly to the circuit of the comparator just as we above figure.
 <br />
+
 **DATAFLOW MODELLING** :
 <br />
 // We use data flow modeling of the register-transfer level of abstraction or RTL, using concurrent assignment statements. <br />
@@ -86,6 +87,7 @@ The dataflow model provides an output as a function of the input vectors.<br />
 The description of the comparator in this case is achieved in a single line of code showing the efficiency of this modelling style.<br />
 It’s a lot less typing than structural model, but will synthesize to exactly the same circuit.  
 <br />
+
 **BEHAVIORAL MODELLING** :
 In the Behavioral model a special block of code known as the always block is used where in the statements are sequential and not concurrent as they are outside of an always block.<br />
 In an always block statement order matters  <br />
