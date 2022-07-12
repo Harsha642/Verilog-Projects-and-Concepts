@@ -41,6 +41,7 @@ Let me explain these three modelling with examples
 I will design a simple comparator which compares the corresponding bits in Input A abd Input B; If both inputs are same the output be high(1) else low(0)  
 A and B are 4 bit binary numbers 
 <br />
+  <img src="Comparator.PNG">
 
 **STRUCTURAL MODELLING** :<br />
 // Use predefined or user-defined primitive gates  <br />
@@ -122,7 +123,7 @@ Although a bit less efficient than a data flow model, this type of modelling can
 <br />
 
 
- **OUTPUT**
+ **OUTPUT** :
     
    <img src="BehaviouralSim.PNG">
 
