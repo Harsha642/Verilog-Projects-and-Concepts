@@ -33,33 +33,34 @@ Circuit diagram or schematic,  <br />
 Logical Expression, and   <br />
 Truth table.  <br />
  <br />
-So, when comes to Verilog HDL or any HDL, there are three aspects of Modelling:
-Structural or Gate-level modelling, 
-Dataflow modelling, 
-Behavioral modelling. 
-These three modelling aspects in Verilog HDL relate to those three aspects of a digital circuit respectively.
-Let me explain these three modelling with examples 
+So, when comes to Verilog HDL or any HDL, there are three aspects of Modelling:    <br />
+Structural or Gate-level modelling,  <br />
+Dataflow modelling,   <br />
+Behavioral modelling.  <br />
+These three modelling aspects in Verilog HDL relate to those three aspects of a digital circuit respectively. <br />
+Let me explain these three modelling with examples  <br />
+<br />
+**STRUCTURAL MODELLING :**<br />
+<br />
+// Use predefined or user-defined primitive gates  <br />
+When we design a Verilog code entirely using Primitive Logic Gates, it is called “Gate Level Modelling“. This is Lowest level abstraction, and it is hard to understand the intent of the code by the human, but is easy and guaranteed for machine compiling and logical synthesis.  <br />
 
-**STRUCTURAL MODELLING :**
-
-// Use predefined or user-defined primitive gates 
-When we design a Verilog code entirely using Primitive Logic Gates, it is called “Gate Level Modelling“. This is Lowest level abstraction, and it is hard to understand the intent of the code by the human, but is easy and guaranteed for machine compiling and logical synthesis.
-
+<br />
 <sup>
- module Comparator(  input [3:0] a, 
-                     input [3:0] b, 
-                     output out      );
-
- wire n0,n1,n2,n3;
-
- xnor xnor0(n0, a[0], b[0]);
- xnor xnor1(n1, a[1], b[1]);
- xnor xnor2(n2, a[2], b[2]);
- xnor xnor3(n3, a[3], b[3]);
- and and0( out, n0, n1, n2, n3);
- 
-endmodule
-</sup>
+ module Comparator(  input [3:0] a,  <br />
+                     input [3:0] b,   <br />
+                     output out      );  <br />
+<br />
+ wire n0,n1,n2,n3;  <br />
+ <br />
+ xnor xnor0(n0, a[0], b[0]);  <br /> 
+ xnor xnor1(n1, a[1], b[1]); <br />
+ xnor xnor2(n2, a[2], b[2]); <br />
+ xnor xnor3(n3, a[3], b[3]);<br />
+ and and0( out, n0, n1, n2, n3);<br />
+ <br />
+endmodule<br />
+</sup><br />
 <br />
 It uses library modules for gates inserted into the Comparator module. The act of inserting the library modules is known as instantiation.
 Each instance of the gate model is wired to different signals.
