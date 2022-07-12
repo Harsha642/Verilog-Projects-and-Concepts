@@ -21,7 +21,7 @@ Verilog language has the capability of designing a module in several coding styl
 Let’s us discuss the first three modelling styles in detailed and also using 4-bit Comparator as an example. <br />
 Before diving into let's look some analogy <br />
 <br />
-**Analogy :** <br />
+**Analogy** : <br />
 When we think of any digital circuit, either it is a combinational or a sequential circuit, we have three aspects in our mind. They are:- <br />
 1) Circuit diagram or schematic,  <br />
 2) Logical Expression, and   <br />
@@ -34,7 +34,7 @@ So, when comes to Verilog HDL or any HDL, there are three aspects of Modelling: 
 These three modelling aspects in Verilog HDL relate to those three aspects of a digital circuit respectively. <br />
 Let me explain these three modelling with examples  <br />
 <br />
-**STRUCTURAL MODELLING :**<br />
+**STRUCTURAL MODELLING** :<br />
 <br />
 // Use predefined or user-defined primitive gates  <br />
 When we design a Verilog code entirely using Primitive Logic Gates, it is called “Gate Level Modelling“. This is Lowest level abstraction, and it is hard to understand the intent of the code by the human, but is easy and guaranteed for machine compiling and logical synthesis.  <br />
@@ -62,7 +62,7 @@ The first XNOR gate labeled xnor0 has a[0] and b[0] as Inputs with n0 as the Out
 <br />
 <br />
 
-**DATAFLOW MODELLING :**
+**DATAFLOW MODELLING** :
 <br />
 // Using concurrent assign statements <br />
 Dataflow modelling is completely done by the logical expression of the digital circuit. We have logical and arithmetic operators in Verilog, which we can use to create logical expressions of the digital circuit.<br />
@@ -82,7 +82,7 @@ The dataflow model provides an output as a function of the input vectors.<br />
 The description of the comparator in this case is achieved in a single line of code showing the efficiency of this modelling style.<br />
 It’s a lot less typing than structural model, but will synthesize to exactly the same circuit.  <br />
 <br />
-**BEHAVIORAL MODELLING :**
+**BEHAVIORAL MODELLING** :
 
 In the Behavioral model a special block of code known as the always block is used where in the statements are sequential and not concurrent as they are outside of an always block.<br />
 In an always block statement order matters  <br />
