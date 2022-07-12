@@ -34,7 +34,12 @@ So, when comes to Verilog HDL or any HDL, there are three aspects of Modelling: 
 2) Dataflow modelling,   <br />
 3) Behavioral modelling.  <br />
 These three modelling aspects in Verilog HDL relate to those three aspects of a digital circuit respectively. <br />
-Let me explain these three modelling with examples  <br />
+Let me explain these three modelling with examples 
+<br />
+
+**Functionality of 4-bit Comparator :**
+I will design a simple comparator which compares the corresponding bits in Input A abd Input B; If both inputs are same the output be high(1) else low(0)  
+A and B are 4 bit binary numbers 
 <br />
 
 **STRUCTURAL MODELLING** :<br />
