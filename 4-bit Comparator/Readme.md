@@ -17,9 +17,9 @@ Verilog language has the capability of designing a module in several coding styl
 2. Dataflow level  <br />
 3. Gate level or Structural level  <br />
 4. Switch level  <br />
-  <br />
 Let’s us discuss the first three modelling styles in detailed and also using 4-bit Comparator as an example. <br />
-Before diving into let's look some analogy <br />
+Before diving into let's look some analogy
+<br />
 
 **Analogy :**
 <br />
