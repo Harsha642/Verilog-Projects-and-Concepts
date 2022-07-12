@@ -65,58 +65,59 @@ endmodule<br />
 It uses library modules for gates inserted into the Comparator module. The act of inserting the library modules is known as instantiation.
 Each instance of the gate model is wired to different signals.
 The first XNOR gate labeled xnor0 has a[0] and b[0] as Inputs with n0 as the Output 
-
-
+<br />
+<br />
 
 **DATAFLOW MODELLING :**
-
-// Using concurrent assign statements 
-Dataflow modelling is completely done by the logical expression of the digital circuit. We have logical and arithmetic operators in Verilog, which we can use to create logical expressions of the digital circuit.
-
- module Comparator1(  input [3:0] A, 
-                      input [3:0] B, 
-                      output Y        );
-    
- assign Y=&((A~^B)); 
-    
-endmodule
-
-
-
+<br />
+// Using concurrent assign statements <br />
+Dataflow modelling is completely done by the logical expression of the digital circuit. We have logical and arithmetic operators in Verilog, which we can use to create logical expressions of the digital circuit.<br />
+<br /><sub>
+ module Comparator1(  input [3:0] A, <br />
+                      input [3:0] B, <br />
+                      output Y        );<br />
+    <br />
+ assign Y=&((A~^B));                                 <br /> 
+    <br />
+endmodule<br />
+</sub>
+<br />
+<br />
  
-The dataflow model provides an output as a function of the input vectors.
-The description of the comparator in this case is achieved in a single line of code showing the efficiency of this modelling style.
-It’s a lot less typing than structural model, but will synthesize to exactly the same circuit.
-
+The dataflow model provides an output as a function of the input vectors.<br />
+The description of the comparator in this case is achieved in a single line of code showing the efficiency of this modelling style.<br />
+It’s a lot less typing than structural model, but will synthesize to exactly the same circuit.  <br />
+<br />
 **BEHAVIORAL MODELLING :**
 
-In the Behavioral model a special block of code known as the always block is used where in the statements are sequential and not concurrent as they are outside of an always block.
-In an always block statement order matters 
+In the Behavioral model a special block of code known as the always block is used where in the statements are sequential and not concurrent as they are outside of an always block.<br />
+In an always block statement order matters  <br />
 
 
-
-
-// Use procedural assignment statements ( always )
-The behavioural modelling completely depends on the truth table or behaviour of the circuit. In this modelling, we can design hardware without even knowing the components present in it, because it doesn’t care.
-
- module Comparator2( input [3:0] A, 
-                     input [3:0] B, 
-                     output reg Y     );
+<br />
+<br />
+// Use procedural assignment statements ( always ) <br />
+The behavioural modelling completely depends on the truth table or behaviour of the circuit. In this modelling, we can design hardware without even knowing the components present in it, because it doesn’t care. <br />
+<sub><br />
+ module Comparator2( input [3:0] A, <br />
+                     input [3:0] B, <br />
+                     output reg Y     );   <br />
                      
-   integer N;
-   
-   always@(A or B)
-   begin
-    Y=0;
-    if(A==B)
-       Y=1;
-   end
-   
-endmodule
-
- 
-The synthesizer will again create exactly the same comparator circuit based on this description. 
-Although a bit less efficient than a data flow model, this type of modelling can be extended easily to much more complex hardware. So this is the type of modelling we will tend to do the most once we become more experienced with Verilog, but the structural modelling and data flow modelling are still used in a lot of examples, So it good to know all three.
+   integer N;<br />
+   <br />
+   always@(A or B)                                                <br />
+   begin<br />
+    Y=0;<br />
+    if(A==B)<br />
+       Y=1;<br />
+   end<br />
+   <br />
+endmodule<br />
+  </sub>
+<br />
+ <br />
+The synthesizer will again create exactly the same comparator circuit based on this description.  <br />
+Although a bit less efficient than a data flow model, this type of modelling can be extended easily to much more complex hardware. So this is the type of modelling we will tend to do the most once we become more experienced with Verilog, but the structural modelling and data flow modelling are still used in a lot of examples, So it good to know all three. <br />
 
 
 
