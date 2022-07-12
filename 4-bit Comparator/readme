@@ -1,1 +1,7 @@
 
+Verilog language has the capability of designing a module in several coding styles. Depending on the needs of a design, internals of each module can be defined at four level of abstractions. Irrespective of the internal abstraction level, the module would behave exactly in the similar way to the external environment. Following are the four different levels of abstraction which can be described by four different coding styles of Verilog language:
+
+Behavioral or Algorithmic level
+Dataflow level
+Gate level or Structural level
+Switch level
