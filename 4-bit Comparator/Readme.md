@@ -34,7 +34,7 @@ So, when comes to Verilog HDL or any HDL, there are three aspects of Modelling: 
 These three modelling aspects in Verilog HDL relate to those three aspects of a digital circuit respectively. <br />
 Let me explain these three modelling with examples  <br />
 <br />
-**STRUCTURAL MODELLING** :<br />
+**STRUCTURAL MODELLING :<br />**
 <br />
 // Use predefined or user-defined primitive gates  <br />
 When we design a Verilog code entirely using Primitive Logic Gates, it is called “Gate Level Modelling“. This is Lowest level abstraction, and it is hard to understand the intent of the code by the human, but is easy and guaranteed for machine compiling and logical synthesis.  <br />
