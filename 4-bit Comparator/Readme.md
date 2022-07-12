@@ -64,16 +64,13 @@ When we design a Verilog code entirely using Primitive Logic Gates, it is called
  <br />
 endmodule<br />
 </sub><br />
-<br />
 It uses library modules for gates inserted into the Comparator module. The act of inserting the library modules is known as instantiation.
 Each instance of the gate model is wired to different signals.
-The first XNOR gate labeled xnor0 has a[0] and b[0] as Inputs with n0 as the Output 
+The first XNOR gate labeled xnor0 has a[0] and b[0] as Inputs with n0 as the Output. Each successive XNOR gate instance operates on successive bits of the input vector. The outputs of the XNOR gates are connected to the 4-input AND gate which provides the output. This code will synthesize exactly to the circuit of the comparator just as we above figure.
 <br />
-<br />
-
 **DATAFLOW MODELLING** :
 <br />
-// Using concurrent assign statements <br />
+// We use data flow modeling of the register-transfer level of abstraction or RTL, using concurrent assignment statements. <br />
 Dataflow modelling is completely done by the logical expression of the digital circuit. We have logical and arithmetic operators in Verilog, which we can use to create logical expressions of the digital circuit.<br />
 <br /><sub>
  module Comparator1(  input [3:0] A, <br />
@@ -85,21 +82,15 @@ Dataflow modelling is completely done by the logical expression of the digital c
 endmodule<br />
 </sub>
 <br />
-<br />
- 
 The dataflow model provides an output as a function of the input vectors.<br />
 The description of the comparator in this case is achieved in a single line of code showing the efficiency of this modelling style.<br />
-It’s a lot less typing than structural model, but will synthesize to exactly the same circuit.  <br />
+It’s a lot less typing than structural model, but will synthesize to exactly the same circuit.  
 <br />
 **BEHAVIORAL MODELLING** :
-
 In the Behavioral model a special block of code known as the always block is used where in the statements are sequential and not concurrent as they are outside of an always block.<br />
 In an always block statement order matters  <br />
 
-
-<br />
-<br />
-// Use procedural assignment statements ( always ) <br />
+// We could use behavioral modeling which uses procedural statements known as an always block similar to process statements in VHDL <br />
 The behavioural modelling completely depends on the truth table or behaviour of the circuit. In this modelling, we can design hardware without even knowing the components present in it, because it doesn’t care. <br />
 <sub><br />
  module Comparator2( input [3:0] A, <br />
