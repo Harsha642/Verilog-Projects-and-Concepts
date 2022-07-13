@@ -39,7 +39,7 @@ Let me explain these three modelling with examples
 <br />
 
 **Functionality of 4-bit Comparator :**<br />
-I will design a simple comparator which compares the corresponding bits in Input A abd Input B; If both inputs are same the output be high(1) else low(0)  
+I will design a simple comparator which compares the corresponding bits in Input A and Input B; If both inputs are same the output be high(1) else low(0)  
 A and B are 4 bit binary numbers 
 <br />
   <img src="Comparator.PNG">
