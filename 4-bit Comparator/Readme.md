@@ -3,7 +3,7 @@ Verilog, standardized as IEEE 1364, is a hardware description language (HDL) use
 It is most commonly used in the design and verification of digital circuits at the register-transfer level of abstraction.  <br />
 In Verilog, a design consists of modules. <br />
 <br />
-Verilog is a acronym for Verifying Logic  <br />
+Verilog is a acronym for **Veri**fying **Log**ic  <br />
 <br /> 
 **History of Verilog** :  <br />
 Verilog is a modeling language created by Gateway Automation in 1984. Gateway is acquired by Cadence in 1990. With the increasing success of VHDL at the time, Cadence decided to make the language available for open standardization. Cadence transferred Verilog into the public domain under the Open Verilog International Organization now known as Accellera. Verilog was later submitted to IEEE and became the IEEE Standard 1364 in 1995, commonly referred to as Verilog-95.  <br />
