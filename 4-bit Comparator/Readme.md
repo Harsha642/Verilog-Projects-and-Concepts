@@ -87,8 +87,8 @@ The dataflow model provides an output as a function of the input vectors.<br />
 The description of the comparator in this case is achieved in a single line of code showing the efficiency of this modelling style.<br />
 It’s a lot less typing than structural model, but will synthesize to exactly the same circuit.  
 <br />
-
-**BEHAVIORAL MODELLING** :
+<br />
+**BEHAVIORAL MODELLING** : <br />
 In the Behavioral model a special block of code known as the always block is used where in the statements are sequential and not concurrent as they are outside of an always block.<br />
 In an always block statement order matters  <br />
 
