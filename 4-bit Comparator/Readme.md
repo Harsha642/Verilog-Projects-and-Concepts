@@ -68,6 +68,7 @@ It uses library modules for gates inserted into the Comparator module. The act o
 Each instance of the gate model is wired to different signals.
 The first XNOR gate labeled xnor0 has a[0] and b[0] as Inputs with n0 as the Output. Each successive XNOR gate instance operates on successive bits of the input vector. The outputs of the XNOR gates are connected to the 4-input AND gate which provides the output. This code will synthesize exactly to the circuit of the comparator just as we above figure.
 <br />
+<br />
 
 **DATAFLOW MODELLING** :
 <br />
