@@ -6,7 +6,8 @@ A Multiplexer (or mux;), also known as a data selector, a combinational logic ci
 **assign y = sel ? a : b ;**        <br />
 This operator ? means that the output 'y' becomes equal to data 'a' if select line 'sel' is true otherwise 'b' is the final output. 
 <br />
-In User-Defined Primitive or UDP, the behavior of the output is defined by truth table that includes the don't care symbols indicated by a question mark. This allows us to specify the behavior more precisely. This model is a little different from the others in that when 'a' and 'b' match, select('sel') is ignored and the output('y') will be a logical level instead of an **x** like it is in the other models. We'll be able to see this in simulation. This behavior is a little more optimistic and likely more robust. So this gives us some motivation why we might want to define our own user primitives instead of using the given operators and statements within Verilog.
+
+In **User-Defined Primitive or UDP**, the behavior of the output is defined by truth table that includes the don't care symbols indicated by a question mark. This allows us to specify the behavior more precisely. This model is a little different from the others in that when 'a' and 'b' match, select('sel') is ignored and the output('y') will be a logical level instead of an **x** like it is in the other models. We'll be able to see this in simulation. This behavior is a little more optimistic and likely more robust. So this gives us some motivation why we might want to define our own user primitives instead of using the given operators and statements within Verilog.
 <br />
 
 The input signals are 'a' and 'b'. 'sel' is the select line with 'y' as its output. We can orally solve for the expression of the output that comes out to be:
