@@ -15,7 +15,8 @@ endmodule
 
 module Mux1( input a,b, sel,
             output y   );
-    
+wire y1, y2, nsel ;
+            
 and g1(y1, a, nsel) ;
     g2(y2, a, sel) ;
 or  g3(y, y1, y2)  ;
