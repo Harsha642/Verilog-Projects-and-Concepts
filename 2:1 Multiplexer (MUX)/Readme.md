@@ -9,6 +9,7 @@ This operator ? means that the output 'y' becomes equal to data 'a' if select li
 The input signals are 'a' and 'b'. 'sel' is the select line with 'y' as its output. We can orally solve for the expression of the output that comes out to be:
 
                         y = a.(sel)’ + b.(sel)
+
 <br />
 
 **Logic Diagram and Truth Table :**
