@@ -13,12 +13,12 @@ The input signals are 'a' and 'b'. 'sel' is the select line with 'y' as its outp
 <br />
 
 **Logic Diagram and Truth Table :**<br />
-a.The schematic diagram, boolean equation and the truth table of a 2:1 multiplexer with inputs A and B, select input S and the output Z. <br />
+a. The schematic diagram, boolean equation and the truth table of a 2:1 multiplexer with inputs A and B, select input S and the output Z. <br />
 <img src="Mux3.PNG"> <br />
-b. Representaion  <br />
+b.  Representaion  <br />
  <img src="Mux2.PNG">  
  <br />
- c. Logic Diagram of 2: 1 MUX  <br />
+c.  Logic Diagram of 2: 1 MUX  <br />
   <img src="Mux1.PNG"> <br />
  
 
