@@ -10,6 +10,7 @@ The input signals are 'a' and 'b'. 'sel' is the select line with 'y' as its outp
 
                         y = a.(sel)’ + b.(sel)
 
+<br />
 **Logic Diagram and Truth Table :**
 <img src="Mux3.PNG"> <br />
  <img src="Mux2.PNG">
