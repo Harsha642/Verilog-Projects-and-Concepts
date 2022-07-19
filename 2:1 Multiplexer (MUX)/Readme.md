@@ -13,9 +13,12 @@ The input signals are 'a' and 'b'. 'sel' is the select line with 'y' as its outp
 <br />
 
 **Logic Diagram and Truth Table :**<br />
+a.
 <img src="Mux3.PNG"> <br />
+b.
  <img src="Mux2.PNG">
  <br />
+ c.
   <img src="Mux1.PNG">
  
 
