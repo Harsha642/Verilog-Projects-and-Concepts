@@ -1,1 +1,17 @@
 
+Q) Difference between Bitwise vs. Logical Operators ? //
+While working on a single bit it doesn't matter either we use Bitwise Operator or Logical Operator. But When using vectors, 
+the distinction between the two operator types becomes important. A bitwise operation between two N-bit vectors replicates the operation
+for each bit of the vector and produces a N-bit output, while a logical operation treats the entire vector as a boolean value (true = non-zero, false = zero)
+and produces a 1-bit output.  //
+Verilog Logical Operators
+1)logical-and(&&) //binary operator
+2)logical-or(||) //binary operator
+3)logical-not(!) //unary operator
+Note : The bitwise-XOR operator is ^. There is no logical-XOR operator.
+
+Logical operators result in logical 1, 0 or x
+Bitwise operators results in a bit-by-bit value
+//let x = 4’b1010, y = 4’b0000
+x | y //bitwise OR, result is 4’b1010
+x || y //logical OR, result is 1
