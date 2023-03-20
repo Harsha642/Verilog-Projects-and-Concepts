@@ -1,4 +1,7 @@
 
+Some Important Points : 
+Set and Reset are Synchronous. They will only take effect on the next clock edge. Clear and Preset are Asynchronous. They will take effect immediately.
+----------------------------------
 Q) Difference between Bitwise vs. Logical Operators ? //
 While working on a single bit it doesn't matter either we use Bitwise Operator or Logical Operator. But When using vectors, 
 the distinction between the two operator types becomes important. A bitwise operation between two N-bit vectors replicates the operation
