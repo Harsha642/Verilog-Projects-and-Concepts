@@ -1,0 +1,35 @@
+Q1)  If a circuit has asynchronous set does it means it is asynchronous sequential circuit ? 
+For example : Rising Edhe D Flip Flop with Asynchronous Reset High
+Ans: Not necessarily. The presence of an asynchronous set input does not necessarily mean that a circuit is an asynchronous sequential circuit.
+
+An asynchronous set input is used to set the output of a flip-flop to a specific state regardless of the clock input. When the set input is asserted, 
+the output of the flip-flop is set to a logic high state. The set input is usually accompanied by a reset input, 
+which sets the output of the flip-flop to a logic low state.
+
+A circuit can have an asynchronous set input and still be a synchronous sequential circuit if it uses clocked flip-flops for its state elements.
+In this case, the asynchronous set input is simply an additional input to the flip-flop that allows the output to be set to a specific state at any time, 
+even when the clock input is low.
+
+On the other hand, an asynchronous sequential circuit is a digital circuit that uses feedback to create a memory element and is not synchronized 
+to a common clock signal. The output of an asynchronous sequential circuit depends on the history of its inputs and the order in which they were received, 
+as well as the internal state of the circuit. Asynchronous sequential circuits are generally more difficult to design and analyze than synchronous circuits 
+because their behavior is not predictable based on a fixed timing sequence.
+
+Q2) Synchronous Reset high D flip flop vs Asynchronous Reset High for a rising edge D Flip Flop ?
+Ans : Synchronous Reset High D Flip Flop and Asynchronous Reset High D Flip Flop are two different types of flip-flops that differ in their reset behavior.
+
+Synchronous Reset High D Flip Flop: In a synchronous reset high D flip-flop, the reset input is synchronized with the clock signal,
+and the flip-flop will be reset to the logic 0 state only on the clock edge when the reset input is asserted. This means that the output
+of the flip-flop will not change immediately when the reset input is asserted, but rather it will be reset to the logic 0 state at the next clock edge.
+
+Asynchronous Reset High D Flip Flop: In an asynchronous reset high D flip-flop, the reset input is not synchronized with the clock signal,
+and the flip-flop will be reset to the logic 0 state immediately when the reset input is asserted. This means that the output of the flip-flop
+will change as soon as the reset input is asserted, regardless of the timing of the clock signal.
+
+The main difference between these two types of flip-flops is in their response time to the reset input. The synchronous reset high
+D flip-flop ensures that the flip-flop output is reset only at a specific time, when the clock signal is in a particular state, 
+whereas the asynchronous reset high D flip-flop resets the output immediately, irrespective of the clock state.
+
+In general, synchronous reset high D flip-flops are preferred over asynchronous reset high D flip-flops because they are more robust
+to noise and provide a more predictable timing behavior. However, asynchronous reset high D flip-flops are useful in some applications 
+where the timing constraints are not as critical, and immediate reset of the flip-flop is desired.
